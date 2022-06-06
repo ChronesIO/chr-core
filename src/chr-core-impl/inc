@@ -1,0 +1,4 @@
+#pragma once
+
+#include "./std/inc"
+#include "./typ/inc"

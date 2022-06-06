@@ -1,0 +1,4 @@
+#pragma once
+
+#include "./std-mem.cc"
+#include "./std-str.cc"
