@@ -2,7 +2,7 @@
 
 #include <typeinfo>
 
-#include "./types.cc"
+#include "./std-int.cc"
 
 namespace chr
 {

@@ -1,7 +1,6 @@
 #pragma once
 
-#include "./types.cc"
-#include <chr-core-impl/std/std-lim.cc>
+#include "./std-int.cc"
 
 #define _CHR__TYPES_LIMITS__NUMERIC_TYPE(type, value) \
     constexpr ULong type = value;
@@ -17,7 +16,7 @@
     _CHR__TYPES_LIMITS__NUMERIC_TYPE_SUFFIX(type, 0, Min) \
     _CHR__TYPES_LIMITS__NUMERIC_TYPE_SUFFIX(type, macro_pre_type##_MAX, Max)
 
-namespace chr::limits
+namespace chr
 {
     _CHR__TYPES_LIMITS__NUMERIC_TYPE_MIN_MAX(Int8, INT8);
     _CHR__TYPES_LIMITS__NUMERIC_TYPE_MIN_MAX(Int16, INT16);

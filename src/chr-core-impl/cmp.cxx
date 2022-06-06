@@ -5,4 +5,6 @@
 void test()
 {
     using namespace chr;
+
+    str s = "Hello World";
 }
