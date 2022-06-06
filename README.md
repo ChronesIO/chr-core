@@ -1,8 +1,8 @@
 > :information_source: This project is currently work in progress
 
 # chr-core
-[![](https://tokei.rs/b1/github/ChronesIO/chr?category=files)](https://github.com/ChronesIO/chr)
-[![](https://tokei.rs/b1/github/ChronesIO/chr?category=code)](https://github.com/ChronesIO/chr)
+[![](https://tokei.rs/b1/github/ChronesIO/chr-core?category=files)](https://github.com/ChronesIO/chr-core)
+[![](https://tokei.rs/b1/github/ChronesIO/chr-core?category=code)](https://github.com/ChronesIO/chr-core)
 
 **chr-core**, module of [chr](https://github.com/ChronesIO/chr), another standard library layer.
 
