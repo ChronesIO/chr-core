@@ -7,4 +7,6 @@ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 add_library(chr-core src/chr-core)
 set_target_properties(chr-core PROPERTIES LINKER_LANGUAGE CXX)
 
+target_include_directories(chr-core PUBLIC src/)
+
 add_subdirectory(src)

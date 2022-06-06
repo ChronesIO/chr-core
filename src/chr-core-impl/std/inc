@@ -1,4 +1,6 @@
 #pragma once
 
+#include "./std-col.cc"
 #include "./std-mem.cc"
+#include "./std-rw.cc"
 #include "./std-str.cc"
