@@ -1,6 +1,7 @@
 #pragma once
 
 #include "./std-col.cc"
+#include "./std-fun.cc"
 #include "./std-int.cc"
 #include "./std-int-lim.cc"
 #include "./std-lim.cc"
