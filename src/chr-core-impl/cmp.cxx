@@ -10,4 +10,6 @@ auto test() -> void
 
     wstr a1 = to_wstr("Hi") + to_wstr(10);
     str a2 = to_str(a1 + L" Hi");
+
+    cout << "hi" << endl;
 }
