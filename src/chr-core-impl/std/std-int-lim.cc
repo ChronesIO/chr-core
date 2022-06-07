@@ -2,18 +2,17 @@
 
 #include "./std-int.cc"
 
-#define _CHR__STD_INT_LIM__NUMERIC_TYPE(type, value) \
-    constexpr ULong type = value;
+#define _CHR__STD_INT_LIM__NUMERIC_TYPE(type, value) constexpr ULong type = value;
 
-#define _CHR__STD_INT_LIM__NUMERIC_TYPE_SUFFIX(type, value, suffix) \
+#define _CHR__STD_INT_LIM__NUMERIC_TYPE_SUFFIX(type, value, suffix)                                                   \
     _CHR__STD_INT_LIM__NUMERIC_TYPE(type##suffix, value)
 
-#define _CHR__STD_INT_LIM__NUMERIC_TYPE_MIN_MAX(type, macro_pre_type) \
-    _CHR__STD_INT_LIM__NUMERIC_TYPE_SUFFIX(type, macro_pre_type##_MIN, Min)\
+#define _CHR__STD_INT_LIM__NUMERIC_TYPE_MIN_MAX(type, macro_pre_type)                                                 \
+    _CHR__STD_INT_LIM__NUMERIC_TYPE_SUFFIX(type, macro_pre_type##_MIN, Min)                                           \
     _CHR__STD_INT_LIM__NUMERIC_TYPE_SUFFIX(type, macro_pre_type##_MAX, Max)
 
-#define _CHR__STD_INT_LIM__NUMERIC_TYPE_MIN0_MAX(type, macro_pre_type) \
-    _CHR__STD_INT_LIM__NUMERIC_TYPE_SUFFIX(type, 0, Min) \
+#define _CHR__STD_INT_LIM__NUMERIC_TYPE_MIN0_MAX(type, macro_pre_type)                                                \
+    _CHR__STD_INT_LIM__NUMERIC_TYPE_SUFFIX(type, 0, Min)                                                              \
     _CHR__STD_INT_LIM__NUMERIC_TYPE_SUFFIX(type, macro_pre_type##_MAX, Max)
 
 namespace chr

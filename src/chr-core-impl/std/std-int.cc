@@ -46,7 +46,7 @@ namespace chr
 {
     using Void = void;
 
-    using VoidPtr = void*;
+    using VoidPtr = Void*;
     using vp = VoidPtr;
 
     static_assert(sizeof(void*) == sizeof(UInt64));

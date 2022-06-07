@@ -1,17 +1,13 @@
 #include <iostream>
 #include <memory>
 
+#include "chr-core-impl/std/std-col.cc"
 #include "chr-core-impl/std/std-fun.cc"
+#include "chr-core-impl/std/std-mem.cc"
+#include "chr-core-impl/std/std-typh.cc"
 #include "inc"
 
-void test()
+auto test() -> void
 {
-    using namespace chr;
-
-    str s = "Hello World";
-
-    str s2 = "Hello World 2";
-
-    sp<int> a = sp_new<int>(10);
-
+    auto v = []() -> int { return 10; };
 }
