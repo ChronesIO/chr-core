@@ -15,4 +15,18 @@ namespace chr
 
     template <class T> using Predicate = Func<bool, T>;
     template <class T> using predicate = Predicate<T>;
+
+    template <class T, class TClass>
+    auto MemberFunc(T TClass::*f) noexcept
+        -> std::invoke_result_t<decltype(&std::mem_fn<T, TClass>), decltype(std::forward<T TClass::*>(f))>
+    {
+        return std::mem_fn(std::forward<T TClass::*>(f));
+    }
+
+    template <class T, class TClass>
+    auto func_mem(T TClass::*f) noexcept
+        -> std::invoke_result_t<decltype(&std::mem_fn<T, TClass>), decltype(std::forward<T TClass::*>(f))>
+    {
+        return std::mem_fn(std::forward<T TClass::*>(f));
+    }
 }

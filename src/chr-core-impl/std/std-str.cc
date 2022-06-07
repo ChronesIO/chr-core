@@ -17,6 +17,19 @@ namespace chr
     using WStringStream = std::wstringstream;
     using wstrs = WStringStream;
 
+    template <class... TArgs> inline auto StringBuild(TArgs&&... args) -> String
+    {
+        strs ss;
+        (ss << ... << args);
+        return ss.str();
+    }
+    template <class... TArgs> inline auto WStringBuild(TArgs&&... args) -> WString
+    {
+        wstrs ss;
+        (ss << ... << args);
+        return ss.str();
+    }
+
     template <class... TArgs> inline auto str_build(TArgs&&... args) -> str
     {
         strs ss;

@@ -4,21 +4,34 @@
 #include "./std-str.cc"
 
 #define _CHR__STD_STR_CNV__TO_STR(type)                                                                               \
+    inline auto ToString(type v)->String                                                                              \
+    {                                                                                                                 \
+        return std::to_string(v);                                                                                     \
+    }                                                                                                                 \
     inline auto to_str(type v)->str                                                                                   \
     {                                                                                                                 \
         return std::to_string(v);                                                                                     \
     }
 #define _CHR__STD_STR_CNV__TO_WSTR(type)                                                                              \
+    inline auto ToWString(type v)->WString                                                                            \
+    {                                                                                                                 \
+        return std::to_wstring(v);                                                                                    \
+    }                                                                                                                 \
     inline auto to_wstr(type v)->wstr                                                                                 \
     {                                                                                                                 \
         return std::to_wstring(v);                                                                                    \
     }
-
 #define _CHR__STD_STR_CNV__TO_STR_WSTR(type)                                                                          \
     _CHR__STD_STR_CNV__TO_STR(type)                                                                                   \
     _CHR__STD_STR_CNV__TO_WSTR(type)
 
 #define _CHR__STD_STR_CNV__TO_STR__STREAM(type)                                                                       \
+    inline auto ToString(type v)->String                                                                              \
+    {                                                                                                                 \
+        strs ss;                                                                                                      \
+        ss << v;                                                                                                      \
+        return ss.str();                                                                                              \
+    }                                                                                                                 \
     inline auto to_str(type v)->str                                                                                   \
     {                                                                                                                 \
         strs ss;                                                                                                      \
@@ -26,6 +39,12 @@
         return ss.str();                                                                                              \
     }
 #define _CHR__STD_STR_CNV__TO_WSTR__STREAM(type)                                                                      \
+    inline auto ToWString(type v)->WString                                                                            \
+    {                                                                                                                 \
+        wstrs ss;                                                                                                     \
+        ss << v;                                                                                                      \
+        return ss.str();                                                                                              \
+    }                                                                                                                 \
     inline auto to_wstr(type v)->wstr                                                                                 \
     {                                                                                                                 \
         wstrs ss;                                                                                                     \

@@ -7,12 +7,18 @@
 
 namespace chr
 {
-    using exc = std::exception;
-    using err = std::runtime_error;
+    using Exception = std::exception;
+    using exc = Exception;
 
-    using exc_ref = const exc&;
-    using err_ref = const err&;
+    using Error = std::runtime_error;
+    using err = Error;
+
+    using ExceptionRef = const Exception&;
+    using exc_ref = ExceptionRef;
+
+    using ErrorRef = const Error&;
+    using err_ref = ErrorRef;
 
     template <class T> inline auto rethrow(T&& e) -> void { std::throw_with_nested(e); }
-    inline auto rethrow(const String& s)->void { std::throw_with_nested(err(s)); }
+    inline auto rethrow(const str& s) -> void { std::throw_with_nested(err(s)); }
 }

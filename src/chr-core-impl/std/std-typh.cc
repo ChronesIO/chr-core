@@ -9,6 +9,6 @@ namespace chr
     using Hash = ULong;
     using hash = Hash;
 
-    inline auto typeh(const std::type_info &t) -> Hash
-    { return t.hash_code(); }
+    template <class T> auto TypeHash() -> Hash { return typeid(T).hash_code(); }
+    template <class T> auto typeh() -> hash { return typeid(T).hash_code(); }
 }
