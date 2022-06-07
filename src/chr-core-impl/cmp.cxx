@@ -1,13 +1,13 @@
 #include <iostream>
 #include <memory>
 
-#include "chr-core-impl/std/std-col.cc"
-#include "chr-core-impl/std/std-fun.cc"
-#include "chr-core-impl/std/std-mem.cc"
-#include "chr-core-impl/std/std-typh.cc"
+#include "chr-core-impl/std/inc"
 #include "inc"
 
 auto test() -> void
 {
-    auto v = []() -> int { return 10; };
+    using namespace chr;
+
+    wstr a1 = to_wstr("Hi") + to_wstr(10);
+    str a2 = to_str(a1 + L" Hi");
 }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "./std-col.cc"
+#include "./std-exc.cc"
 #include "./std-fun.cc"
 #include "./std-int.cc"
 #include "./std-int-lim.cc"
@@ -8,5 +9,7 @@
 #include "./std-mem.cc"
 #include "./std-rw.cc"
 #include "./std-str.cc"
+#include "./std-str-cnv.cc"
+#include "./std-str-enc.cc"
 #include "./std-tem.cc"
 #include "./std-typh.cc"
