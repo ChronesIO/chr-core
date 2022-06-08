@@ -10,10 +10,9 @@ namespace chr
 
     constexpr auto nl = std::nullopt;
 
-    template <class T> constexpr auto nlo = nla<T>(nl);
+    template <class T> const auto nlo = nla<T>(nl);
 
-    template <class T>
-    constexpr auto nlv(T&& v) -> decltype(nla<T>(std::forward<T>(v)))
+    template <class T> constexpr auto nlv(T&& v) -> decltype(nla<T>(std::forward<T>(v)))
     {
         return nla<T>(std::forward<T>(v));
     }

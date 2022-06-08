@@ -11,9 +11,11 @@ auto test() -> void
 {
     using namespace chr;
 
-    auto a = chr::memf(&sp<int>::get);
+    auto a = memf(&sp<int>::get);
     auto b = a(sp_new<int>());
-    auto c = chr::memf(&up<int>::release);
+    auto c = memf(&up<int>::release);
 
     auto n = nlo<int>;
+    auto n2 = nlo<str>;
+    n2 = "hi";
 }
