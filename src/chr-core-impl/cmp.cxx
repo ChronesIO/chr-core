@@ -18,4 +18,5 @@ auto test() -> void
     auto n = nlo<int>;
     auto n2 = nlo<str>;
     n2 = "hi";
+
 }
