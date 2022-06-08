@@ -11,4 +11,5 @@ Head Module: [chr](https://github.com/ChronesIO/chr)
 
 Other Modules:
 - [chr-mem](https://github.com/ChronesIO/chr-mem) *(memory hacking tools)*
+- [chr-math](https://github.com/ChronesIO/chr-math) *(math / vectors)*
 ---
