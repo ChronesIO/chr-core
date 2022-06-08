@@ -8,6 +8,7 @@ namespace chr
     template <class T> using Nullable = typename std::optional<T>;
     template <class T> using nla = Nullable<T>;
 
+    constexpr auto Null = std::nullopt;
     constexpr auto nl = std::nullopt;
 
     template <class T> const auto nlo = nla<T>(nl);
