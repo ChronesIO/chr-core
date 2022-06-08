@@ -8,6 +8,7 @@
 #include "./std-ios.cc"
 #include "./std-lim.cc"
 #include "./std-mem.cc"
+#include "./std-nul.cc"
 #include "./std-rw.cc"
 #include "./std-str.cc"
 #include "./std-str-cnv.cc"
