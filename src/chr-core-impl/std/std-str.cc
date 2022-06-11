@@ -3,6 +3,8 @@
 #include <sstream>
 #include <string>
 
+#include "./std-len.cc"
+
 namespace chr
 {
     using String = std::string;
@@ -17,26 +19,29 @@ namespace chr
     using WStringStream = std::wstringstream;
     using wstrs = WStringStream;
 
-    template <class... TArgs> inline auto StringBuild(TArgs&&... args) -> String
+    CHR_LEN_IMPL_SIZE(str)
+    CHR_LEN_IMPL_SIZE(wstr)
+
+    template <class... TArgs> auto StringBuild(TArgs&&... args) -> String
     {
         strs ss;
         (ss << ... << args);
         return ss.str();
     }
-    template <class... TArgs> inline auto WStringBuild(TArgs&&... args) -> WString
+    template <class... TArgs> auto WStringBuild(TArgs&&... args) -> WString
     {
         wstrs ss;
         (ss << ... << args);
         return ss.str();
     }
 
-    template <class... TArgs> inline auto str_build(TArgs&&... args) -> str
+    template <class... TArgs> auto str_build(TArgs&&... args) -> str
     {
         strs ss;
         (ss << ... << args);
         return ss.str();
     }
-    template <class... TArgs> inline auto wstr_build(TArgs&&... args) -> wstr
+    template <class... TArgs> auto wstr_build(TArgs&&... args) -> wstr
     {
         wstrs ss;
         (ss << ... << args);
