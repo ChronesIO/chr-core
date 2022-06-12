@@ -10,10 +10,12 @@ namespace chr
     using RecMutex = std::recursive_mutex;
     using mtx_rec = RecMutex;
 
-    using Lock = std::lock_guard<Mutex>;
+    template <class T> using LockGuard = std::lock_guard<T>;
+
+    using Lock = LockGuard<Mutex>;
     using lock = Lock;
 
-    using RecLock = std::lock_guard<RecMutex>;
+    using RecLock = LockGuard<RecMutex>;
     using lock_rec = RecLock;
 
     const auto LockDefer = std::defer_lock;
