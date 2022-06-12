@@ -10,4 +10,7 @@
 auto test() -> void
 {
     using namespace chr;
+
+    mtx x;
+    lock l(x, lock_adopt);
 }
