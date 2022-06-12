@@ -12,6 +12,6 @@
 
 namespace chr
 {
-    _CHR__STD_INT_ATO__NUMERIC_ATOMIC(String, str)
-    _CHR__STD_INT_ATO__NUMERIC_ATOMIC(WString, wstr)
+    _CHR__STD_STR_ATO__NUMERIC_ATOMIC(String, str)
+    _CHR__STD_STR_ATO__NUMERIC_ATOMIC(WString, wstr)
 }
