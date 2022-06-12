@@ -21,4 +21,5 @@
 #include "./std-str.cc"
 #include "./std-str-ato.cc"
 #include "./std-tem.cc"
+#include "./std-thr.cc"
 #include "./std-typ.cc"
