@@ -2,9 +2,6 @@
 
 #include <type_traits>
 
-//    template<class T1, class T2> constexpr bool ___ = std::___<T1, T2>;
-//    template<class T> constexpr bool ___ = std::___<T>;
-
 namespace chr
 {
     template<class T1, class T2> constexpr bool IsSame = std::is_same_v<T1, T2>;

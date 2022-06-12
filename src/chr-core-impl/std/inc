@@ -1,12 +1,14 @@
 #pragma once
 
 #include "./std-any.cc"
+#include "./std-ato.cc"
 #include "./std-col.cc"
 #include "./std-exc.cc"
 #include "./std-fun.cc"
 #include "./std-inl.cc"
 #include "./std-int-lim.cc"
 #include "./std-int.cc"
+#include "./std-int-ato.cc"
 #include "./std-ios.cc"
 #include "./std-len.cc"
 #include "./std-lim.cc"
