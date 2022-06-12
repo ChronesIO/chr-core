@@ -1,16 +1,12 @@
 #include <iostream>
-#include <memory>
 
-#include "chr-core-impl/std/inc"
-#include "chr-core-impl/std/std-fun.cc"
-#include "chr-core-impl/std/std-mem.cc"
-#include "chr-core-impl/std/std-nul.cc"
 #include "inc"
 
 auto test() -> void
 {
     using namespace chr;
 
-    mtx x;
-    lock l(x, lock_adopt);
+    vri<i32, str, vp> v = 10;
+    str s = "J";
+    auto l = s | len;
 }
