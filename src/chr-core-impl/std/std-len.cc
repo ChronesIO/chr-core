@@ -3,7 +3,7 @@
 #include "./std-int.cc"
 
 #define CHR_LEN_IMPL_SIZE_2(type)                                                                                     \
-    inline ::chr::ul operator|(type first, ::chr::LengthOperatorType_ second)                                         \
+    inline chr::ul operator|(type first, chr::LengthOperatorType_ second)                                             \
     {                                                                                                                 \
         return first.size();                                                                                          \
     }
@@ -14,7 +14,7 @@
     CHR_LEN_IMPL_SIZE_2(type&&)
 
 #define CHR_LEN_IMPL_SIZE_T_2(type)                                                                                   \
-    template <class T>::chr::ul operator|(type first, ::chr::LengthOperatorType_ second)                              \
+    template <class T> chr::ul operator|(type first, chr::LengthOperatorType_ second)                                 \
     {                                                                                                                 \
         return first.size();                                                                                          \
     }
@@ -25,7 +25,7 @@
     CHR_LEN_IMPL_SIZE_T_2(type<T>&&)
 
 #define CHR_LEN_IMPL_SIZE_TARGS_2(type)                                                                               \
-    template <class... TArgs>::chr::ul operator|(type first, ::chr::LengthOperatorType_ second)                       \
+    template <class... TArgs> chr::ul operator|(type first, chr::LengthOperatorType_ second)                          \
     {                                                                                                                 \
         return first.size();                                                                                          \
     }
