@@ -37,6 +37,7 @@ namespace chr
     using f64 = Float64;
 
     using Long = long long;
+    using il = Long;
 
     using ULong = unsigned long long;
     using ul = ULong;
