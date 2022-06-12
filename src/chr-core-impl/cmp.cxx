@@ -10,7 +10,4 @@
 auto test() -> void
 {
     using namespace chr;
-
-    auto l2 = "Hello World" | len;
-    auto l3 = any_new<str>("Hello World");
 }
