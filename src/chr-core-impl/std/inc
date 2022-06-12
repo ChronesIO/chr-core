@@ -23,3 +23,4 @@
 #include "./std-tem.cc"
 #include "./std-thr.cc"
 #include "./std-typ.cc"
+#include "./std-vri.cc"
