@@ -1,4 +1,5 @@
 #pragma once
 
-#include "./mac-nodiscard.cc"
+#include "./mac-attributes.cc"
+#include "./mac-inline.cc"
 #include "./mac-prop.cc"
