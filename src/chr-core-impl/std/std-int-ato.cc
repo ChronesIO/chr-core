@@ -31,6 +31,8 @@ namespace chr
     _CHR__STD_INT_ATO__NUMERIC_ATOMIC(Long, il)
     _CHR__STD_INT_ATO__NUMERIC_ATOMIC(ULong, ul)
 
+    _CHR__STD_INT_ATO__NUMERIC_ATOMIC(Bool, bl)
+
     _CHR__STD_INT_ATO__NUMERIC_ATOMIC(VoidPtr, vp)
 
     _CHR__STD_INT_ATO__NUMERIC_ATOMIC(IntPtr, ip)

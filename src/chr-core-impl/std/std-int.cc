@@ -41,6 +41,9 @@ namespace chr
 
     using ULong = unsigned long long;
     using ul = ULong;
+
+    using Bool = bool;
+    using bl = Bool;
 }
 
 namespace chr
