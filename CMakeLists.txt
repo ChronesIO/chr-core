@@ -12,5 +12,5 @@ target_include_directories(chr-core PUBLIC src/)
 add_subdirectory(src)
 
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    target_link_options(chr-core PUBLIC "-fdeclspec")
+    target_compile_options(chr-core PUBLIC "-fdeclspec")
 endif()
