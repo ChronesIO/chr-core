@@ -2,7 +2,7 @@
 
 #include "inc"
 
-auto test() -> void
+static auto test() -> void
 {
     using namespace chr;
 }
