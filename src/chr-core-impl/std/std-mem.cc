@@ -17,13 +17,15 @@ namespace chr
         CHR_PROP(get = GetSharedSelf)
         SharedPtr<T> SharedSelf;
         CHR_ND auto GetSharedSelf() -> SharedPtr<T> { return this->shared_from_this(); }
+        CHR_ND auto GetSharedSelf() const -> SharedPtr<T> { return this->shared_from_this(); }
 
         CHR_PROP(get = GetSharedSelf)
         sp<T> sp_self;
 
         CHR_PROP(get = GetWeakSelf)
         SharedPtr<T> WeakSelf;
-        CHR_ND auto GetWeakSelf() -> SharedPtr<T> { return this->weak_from_this(); }
+        CHR_ND auto GetWeakSelf() noexcept -> SharedPtr<T> { return this->weak_from_this(); }
+        CHR_ND auto GetWeakSelf() const noexcept -> SharedPtr<T> { return this->weak_from_this(); }
 
         CHR_PROP(get = GetWeakSelf)
         sp<T> wp_self;
