@@ -28,6 +28,7 @@ namespace chr
         CHR_PROP(get = GetWeakSelf)
         sp<T> wp_self;
     };
+    template <class T> using sp_obj = SharedObj<T>;
 
     template <class T, class... TArgs> auto SharedNew(TArgs&&... args) -> SharedPtr<T>
     {
