@@ -19,6 +19,12 @@ namespace chr
     using WStringStream = std::wstringstream;
     using wstrs = WStringStream;
 
+    using StringRef = const String&;
+    using str_ref = StringRef;
+
+    using WStringRef = const WString&;
+    using wstr_ref = WStringRef;
+
     CHR_LEN_IMPL_SIZE(str)
     CHR_LEN_IMPL_SIZE(wstr)
 
