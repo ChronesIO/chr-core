@@ -11,6 +11,9 @@ namespace chr
     using Hash = ULong;
     using hash = Hash;
 
+    using Type = std::type_info;
+    using type = Type;
+
     template <class T> auto TypeHash() -> Hash { return typeid(T).hash_code(); }
     template <class T> auto typeh() -> hash { return typeid(T).hash_code(); }
 
