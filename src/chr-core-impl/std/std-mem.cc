@@ -12,6 +12,14 @@ namespace chr
     template <class T> using wp = WeakPtr<T>;
     template <class T> using up = UniquePtr<T>;
 
+    template <class T> using SharedPtrRef = const SharedPtr<T>&;
+    template <class T> using WeakPtrRef = const WeakPtr<T>&;
+    template <class T> using UniquePtrRef = const UniquePtr<T>&;
+
+    template <class T> using sp_ref = SharedPtrRef<T>;
+    template <class T> using wp_ref = WeakPtrRef<T>;
+    template <class T> using up_ref = UniquePtrRef<T>;
+
     template <class T> struct SharedObj : std::enable_shared_from_this<T>
     {
         CHR_PROP(get = GetSharedSelf)
