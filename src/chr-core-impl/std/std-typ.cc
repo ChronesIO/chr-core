@@ -14,6 +14,9 @@ namespace chr
     using Type = std::type_info;
     using type = Type;
 
+    using TypeRef = const std::type_info&;
+    using type_ref = TypeRef;
+
     template <class T> auto TypeHash() -> Hash { return typeid(T).hash_code(); }
     template <class T> auto typeh() -> hash { return typeid(T).hash_code(); }
 
