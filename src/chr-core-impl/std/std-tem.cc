@@ -18,4 +18,6 @@ namespace chr
     template <class T> constexpr bool IsPtr = std::is_pointer_v<T>;
 
     template <class T> constexpr bool EnableIf = std::is_pointer_v<T>;
+
+    template <class T, class TClass> constexpr bool Inherits = std::is_base_of_v<TClass, T>;
 }
