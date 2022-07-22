@@ -31,12 +31,12 @@ namespace chr
         sp<T> sp_self;
 
         CHR_PROP(get = GetWeakSelf)
-        SharedPtr<T> WeakSelf;
-        CHR_ND auto GetWeakSelf() noexcept -> SharedPtr<T> { return this->weak_from_this(); }
-        CHR_ND auto GetWeakSelf() const noexcept -> SharedPtr<T> { return this->weak_from_this(); }
+        WeakPtr<T> WeakSelf;
+        CHR_ND auto GetWeakSelf() noexcept -> WeakPtr<T> { return this->weak_from_this(); }
+        CHR_ND auto GetWeakSelf() const noexcept -> WeakPtr<T> { return this->weak_from_this(); }
 
         CHR_PROP(get = GetWeakSelf)
-        sp<T> wp_self;
+        wp<T> wp_self;
     };
     template <class T> using sp_obj = SharedObj<T>;
 
