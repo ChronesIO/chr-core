@@ -17,7 +17,7 @@ namespace chr
     template <class T> constexpr bool IsFunc = std::is_function_v<T>;
     template <class T> constexpr bool IsPtr = std::is_pointer_v<T>;
 
-    template <class T> constexpr bool EnableIf = std::is_pointer_v<T>;
+    template <bool T1, class T2> using EnableIf = std::enable_if_t<T1, T2>;
 
     template <class T, class TClass> constexpr bool Inherits = std::is_base_of_v<TClass, T>;
 }
