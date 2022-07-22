@@ -3,6 +3,7 @@
 #include "./std-any.cc"
 #include "./std-ato.cc"
 #include "./std-col.cc"
+#include "./std-ec.cc"
 #include "./std-exc.cc"
 #include "./std-fun.cc"
 #include "./std-inl.cc"
