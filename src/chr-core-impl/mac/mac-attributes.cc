@@ -6,3 +6,4 @@
 
 #define CHR_LIKELY [[likely]]
 #define CHR_UNLIKELY [[unlikely]]
+#define CHR_FALLTHROUGH [[fallthrough]]
