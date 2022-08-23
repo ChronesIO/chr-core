@@ -5,6 +5,7 @@
 #include "./std-col.cc"
 #include "./std-ec.cc"
 #include "./std-exc.cc"
+#include "./std-fmt.cc"
 #include "./std-fun.cc"
 #include "./std-inl.cc"
 #include "./std-int-lim.cc"
