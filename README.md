@@ -1,4 +1,4 @@
-> :information_source: This project is currently work in progress
+> :star: This project is now ready to be used
 
 # chr-core
 [![](https://tokei.rs/b1/github/ChronesIO/chr-core?category=files)](https://github.com/ChronesIO/chr-core)
